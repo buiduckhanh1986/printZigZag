@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +14,62 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Printf Zig Zag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-nc-uKo">
+                                <rect key="frame" x="108" y="35" width="159" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Piy-YX-XyD"/>
+                                    <constraint firstAttribute="width" constant="159" id="fOu-xG-DQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZigZag" translatesAutoresizingMaskIntoConstraints="NO" id="TV9-R6-pCF">
+                                <rect key="frame" x="59" y="144" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="Gdh-9M-8M5"/>
+                                    <constraint firstAttribute="height" constant="256" id="cbR-5m-IGa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="©By KhanhBD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vV-Dc-hJN">
+                                <rect key="frame" x="127" y="440" width="120" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3q9-zB-M23"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BUy-P7-mpB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="OmJ-q4-qrD"/>
+                                    <constraint firstAttribute="width" constant="159" id="mZC-cy-75l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3q9-zB-M23"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cyy-nc-uKo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DN6-g8-Qi0"/>
+                            <constraint firstItem="Cyy-nc-uKo" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="15" id="ivL-Uo-hyk"/>
+                            <constraint firstItem="5vV-Dc-hJN" firstAttribute="top" secondItem="TV9-R6-pCF" secondAttribute="bottom" constant="40" id="lSw-0h-Yov"/>
+                            <constraint firstItem="5vV-Dc-hJN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="p0n-UN-w7a"/>
+                            <constraint firstItem="TV9-R6-pCF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xOH-Xk-Miz"/>
+                            <constraint firstItem="TV9-R6-pCF" firstAttribute="top" secondItem="Cyy-nc-uKo" secondAttribute="bottom" constant="65" id="zvv-jO-Je6"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ZigZag" width="420" height="420"/>
+    </resources>
 </document>
